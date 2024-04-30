@@ -1,0 +1,22 @@
+--Tran_Maninang_Views
+--Lynn Tran & Shanklein Maruzandi Maninang
+--041102082 & 041125485
+--List of a dynamic view and materialized view for queries
+
+
+--1. A dynamic view for query 4 in the previous task
+--Provide a query that list all pizza that are medium size and the price is more that $20.
+
+	CREATE VIEW MediumPizza20Plus
+	AS SELECT pizzaname, pizzasize, price
+	   FROM pizza
+	   WHERE pizzasize = 'Medium' AND price>20;
+
+--2. A materialized view for query 9 in the previous task
+--List all the different type of pizza from the pizza table that have a minimum price of less than 14 and grouped by their pizza name.
+
+	CREATE MATERIALIZED VIEW PizzaLessThan14
+	AS SELECT pizzaname, MIN(price)
+	   FROM pizza
+	   GROUP BY pizzaname
+	   HAVING MIN(price)<14;

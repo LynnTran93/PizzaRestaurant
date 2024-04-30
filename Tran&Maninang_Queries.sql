@@ -1,0 +1,86 @@
+--Queries
+--Lynn Tran & Shanklein Maruzandi Maninang
+--041102082 & 041125485
+
+
+--1. A simple query that pulls all columns and rows from a table
+--Select all rows and column from the orders table
+
+	SELECT * 
+	FROM orders;
+
+--2. A query that displays a subset of columns
+--Select all the customer's firstname from the customer table
+	
+	SELECT firstname 
+	FROM customers;
+	
+--3. A query that displays a subset of columns with a single clause (predicate) WHERE statement
+--Select all sandwich that have a price of more that $10.
+
+	SELECT sandname, price
+	FROM sandwich
+	WHERE price>10;
+
+--4. A query that displays a subset of columns with a multi-clause (predicate) WHERE statement using AND/OR
+--Provide a query that list all pizza that are medium size and the price is more than $20.
+
+	SELECT pizzaname, pizzasize, price
+	FROM pizza
+	WHERE pizzasize = 'Medium' AND price>20;
+
+--5. A query that performs a single table join. In other words, you are joining 2 tables.
+--Provide a query that list the first and last name of the customers and their paymenttype.
+
+	select c.firstname,c.lastname,o.paymenttype 
+	from customers c
+	join orders o on (c.customerid = o.customerid);
+
+
+
+--6. A query that performs a multi-table join. In other words, you are joining 3 or more tables.
+--Provide a query that list of customer's first and last name and the pizza they ordered.
+
+	SELECT C.firstname, C.lastname, P.pizzaname
+	FROM customers C JOIN orders O ON (C.customerid = O.customerid)
+					 JOIN pizza P ON (O.pizzaid = P.pizzaid);
+
+--7. A query that performs an aggregate (count, min, max, sum, avg, etc.).
+--provide a query that counts how many different type of sandwich are there from the sandwich table.
+
+	SELECT COUNT(sandname)
+	FROM sandwich;
+
+--8. A query that performs an aggregate (count, min, max, sum, avg, etc.) with a GROUP BY.
+--count how many available pizza sizes are there for each kind of pizza from the pizza table.
+
+	SELECT pizzaname, COUNT(pizzasize)
+	FROM pizza
+	GROUP BY pizzaname;
+
+--9. A query that performs an aggregate (count, min, max, sum, avg, etc.). with a GROUP BY and a HAVING clause
+--List all the different type of pizza from the pizza table that have a minimum price of less than 14 and grouped by their pizza name.
+
+	SELECT pizzaname, MIN(price)
+	FROM pizza
+	GROUP BY pizzaname
+	HAVING MIN(price)<14;
+
+--10. A query that performs a subquery either as part of the WHERE clause or as a derived/virtual table.
+--Select the first and last name of the customers who used 'MasterCard' as a payment method (using a subquery in the where clause)
+	
+	SELECT firstname, lastname
+	FROM customers 
+	WHERE customerid = ANY (SELECT customerid
+							FROM orders 
+							WHERE paymenttype = 'MasterCard');
+
+
+
+--11. A query that performs an aggregate with a join and a group by.
+--List the name of pizza and the minimum price from pizza table where the ingredients contain 'Green Peppers'
+
+	SELECT P.pizzaname, MIN(P.price)
+	FROM pizza P JOIN ingredients I ON (P.ingredid = I.ingredid)
+	WHERE I.ingredient LIKE '%Green Peppers%'
+	GROUP BY pizzaname;

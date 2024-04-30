@@ -1,0 +1,386 @@
+----Tran_Maninang_TestData
+--Lynn Tran & Shanklein Maruzandi Maninang
+--041102082 & 041125485
+--List of command that populate the database of the tables created
+
+
+--insert ingredients
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (1, 'Pepperoni');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (2, 'Mushrooms');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (3, 'Green Peppers');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (4, 'Green Olives');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (5, 'Pineapple');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (6, 'Ham');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (7, 'Minced Beef');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (8, 'Onions');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (9, 'Tomatoes');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (10, 'Bacon');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (11, 'Slices of Steak');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (12, 'Italian Sausage');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (13, 'Hot Peppers');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (14, 'Feta');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (15, 'Black Olives');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (16, 'Anchovies');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (17, 'Salami');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (18, 'Extra Cheese');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (19, 'Chicken');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (20, 'Steak');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (21, 'Meat Sauce');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (22, 'Tomato Sauce');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (23, 'Meatballs');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (24, 'French Fries & Coleslaw');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (25, 'Hot Sauce');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (26, 'Medium Sauce');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (27, 'Mild Sauce');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (28, 'Honey Garlic Sauce');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (29, 'Cheese');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (30, 'Italian Cheese');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (31, 'Slices of Turkey');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (32, 'Steak & Mushrooms');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (33, 'Meatballs, Cheese, & Sauce');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (34, 'Zucchini, Onion Rings, Chicken Nuggets, Chicken Wings, Fries');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (35, 'Lettuce, Chicken, Cheese, Onions, Olives, Tomatoes, Pickles & House Dressing');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (36, 'Romaine Lettuce, Bacon, Parmesan, Homemade Dressing');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (37, 'Mushrooms, Green Peppers, & Pepperoni');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (38, 'Olives, Mushrooms, Green Peppers, & Pepperoni');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (39, 'Pineapple & Ham');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (40, 'Mushrooms, Green Peppers, & Minced Beef');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (41, 'Mushrooms, Green Peppers, Olives, & Onions');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (42, 'Tomatoes, Onions, Olives, Mushrooms, Green Peppers, & Bacon');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (43, 'Slices of Steak, Mushrooms, Onions, & Green Peppers');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (44, 'Pepperoni, Ham, Bacon, & Italian Sausage');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (45, 'Hot Pepper, Feta, Black Olives, Tomatoes, & Onions');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (46, 'Pepperoni, Bacon & Mushrooms');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (47, 'Pesto Sauce, Artichoke, Onion, Black Olives, Hot Peppers, & Italian Sauage');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (48, 'Chicken, Bacon, & Hot Peppers');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (49, 'Cheese, Tomatoes, Pickles, Onions, & Lettuce');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (50, 'Lettuce, Chicken, Cheese, Onions, Olives, Tomatoes, Pickles, & House Dressing');
+INSERT INTO ingredients(IngredID, Ingredient)
+VALUES (51, 'Romaine Lettuce, Bacon, Parmesan, Homemade Dressing');
+
+
+--insert pizza
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (1, 'Plain', 'Small', 10.55, null);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (2, 'Plain', 'Medium', 15.85, null);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (3, 'Plain', 'Large', 19.25, null);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (4, 'Plain', 'XLarge', 26.95, null);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (5, 'Combination', 'Small', 13.75, 37);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (6, 'Combination', 'Medium', 19.95, 37);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (7, 'Combination', 'Large', 23.95, 37);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (8, 'Combination', 'XLarge', 29.95, 37);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (9, 'Combination With Olives', 'Small', 14.75, 38);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (10, 'Combination With Olives', 'Medium', 20.95, 38);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (11, 'Combination With Olives', 'Large', 24.95, 38);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (12, 'Combination With Olives', 'XLarge', 31.95, 38);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (13, 'Pizza Burger', 'Small', 13.75, 40);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (14, 'Pizza Burger', 'Medium', 19.25, 40);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (15, 'Pizza Burger', 'Large', 23.95, 40);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (16, 'Pizza Burger', 'XLarge', 29.95, 40);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (17, 'Vegetarian', 'Small', 14.75, 41);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (18, 'Vegetarian', 'Medium', 20.95, 41);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (19, 'Vegetarian', 'Large', 24.95, 41);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (20, 'Vegetarian', 'XLarge', 31.95, 41);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (21, 'Beneci Special', 'Small', 15.45, 42);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (22, 'Beneci Special', 'Medium', 23.50, 42);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (23, 'Beneci Special', 'Large', 26.95, 42);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (24, 'Beneci Special', 'XLarge', 32.75, 42);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (25, 'Chefs Special', 'Small', 15.45, 43);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (26, 'Chefs Special', 'Medium', 23.50, 43);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (27, 'Chefs Special', 'Large', 26.95, 43);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (28, 'Chefs Special', 'XLarge', 32.75, 43);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (29, 'Meat Lover', 'Small', 15.45, 44);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (30, 'Meat Lover', 'Medium', 23.50, 44);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (31, 'Meat Lover', 'Large', 26.95, 44);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (32, 'Meat Lover', 'XLarge', 32.75, 44);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (33, 'Greek', 'Small', 15.45, 45);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (34, 'Greek', 'Medium', 23.50, 45);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (35, 'Greek', 'Large', 26.95, 45);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (36, 'Greek', 'XLarge', 32.75, 45);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (37, 'Canadian', 'Small', 13.75, 46);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (38, 'Canadian', 'Medium', 19.95, 46);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (39, 'Canadian', 'Large', 23.95, 46);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (40, 'Canadian', 'XLarge', 29.95, 46);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (41, 'The Da Vinci', 'Small', 15.45, 47);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (42, 'The Da Vinci', 'Medium', 23.50, 47);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (43, 'The Da Vinci', 'Large', 26.95, 47);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (44, 'The Da Vinci', 'XLarge', 32.75, 47);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (45, 'Patsy Special', 'Small', 14.75, 48);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (46, 'Patsy Special', 'Medium', 20.95, 48);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (47, 'Patsy Special', 'Large', 24.95, 48);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (48, 'Patsy Special', 'XLarge', 31.95, 48);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (49, 'Hawaiian', 'Small', 13.25, 39);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (50, 'Hawaiian', 'Medium', 19.25, 39);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (51, 'Hawaiian', 'Large', 22.25, 39);
+INSERT INTO pizza(PizzaID, PizzaName, PizzaSize, Price, IngredID)
+VALUES (52, 'Hawaiian', 'XLarge', 29.50, 39);
+
+
+--insert pasta
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (1, 'Spaghetti', null, 'M', 9.95, 21);
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (2, 'Spaghetti', null, 'T', 9.95, 22);
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (3, null, 'Add Meatballs', null, 3.25, 23);
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (4, null, 'Add Italian Sausage', null, 3.25, 12);
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (5, null, 'Add Pepperoni', null, 1.95, 1);
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (6, null, 'Add Mushrooms', null, 1.95, 2);
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (7, null, 'Add Green Peppers', null, 1.95, 3);
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (8, 'Baked Lasagna', null, null, 12.50, null);
+INSERT INTO pasta(PastaID, PastaName, Extra, Sauce, Price, IngredID)
+VALUES (9, 'Cannelloni', null, null, 12.95, null);
+
+
+--insert chicken	
+INSERT INTO chicken(ChickID, ChickName, Sauce, Price, IngredID)
+VALUES (1, 'Chicken Nuggets', null, 12.50, 24);
+INSERT INTO chicken(ChickID, ChickName, Sauce, Price, IngredID)
+VALUES (2, 'Chicken Fingers', null, 12.50, 24);
+INSERT INTO chicken(ChickID, ChickName, Sauce, Price, IngredID)
+VALUES (3, 'Chicken Wings 1 LB.', null, 12.50, null);
+INSERT INTO chicken(ChickID, ChickName, Sauce, Price, IngredID)
+VALUES (4, null, 'Hot', 0, 25);
+INSERT INTO chicken(ChickID, ChickName, Sauce, Price, IngredID)
+VALUES (5, null, 'Medium', 0, 26);
+INSERT INTO chicken(ChickID, ChickName, Sauce, Price, IngredID)
+VALUES (6, null, 'Mild', 0, 27);
+INSERT INTO chicken(ChickID, ChickName, Sauce, Price, IngredID)
+VALUES (7, null, 'Honey Garlic', 0, 28);
+INSERT INTO chicken(ChickID, ChickName, Sauce, Price, IngredID)
+VALUES (8, 'Chicken Parmigiana', null, 16.95, null);
+
+
+--insert sandwiches	
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (1, 'Hamburger', 6.75, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (2, 'Hamburger with Cheese', 7.25, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (3, 'Hamburger Platter', 10.95, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (4, 'Hamburger Platter with Cheese', 11.45, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (5, 'Hamburger Steak Platter', 13.95, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (6, 'Club Sandwich Platter', 13.95, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (7, 'Hot Chicken Sandwich Platter', 10.95, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (8, 'Hot Hamburger Platter', 11.25, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (9, 'Fish & Chips Platter', 13.25, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (10, 'Donair Or Beef or Chicken Sandwich', 7.25, 24);
+INSERT INTO sandwich(SandID, SandName, Price, IngredID)
+VALUES (11, 'Spicy Chicken Wrap Platter', 12.95, 24);
+
+
+--insert subs
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (1, 'The Cheesy Sub', 'H', 'Generous piles of Italian cheese', 7.25, 49);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (2, 'The Cheesy Sub', 'F', 'Generous piles of Italian cheese', 10.95, 49);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (3, 'Turkey Sub', 'H', 'Generous slices of white turkey', 7.25, 49);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (4, 'Turkey Sub', 'F', 'Generous slices of white turkey', 10.95, 49);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (5, 'Bonanza Sub', 'H', 'Tender steak with mushrooms', 7.25, 49);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (6, 'Bonanza Sub', 'F', 'Tender steak with mushrooms', 10.95, 49);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (7, 'The Meatball Sub', 'H', 'Meatballs, cheese & sauce only', 7.25, null);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (8, 'The Meatball Sub', 'F', 'Meatballs, cheese & sauce only', 10.95, null);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (9, 'The Club Sub', 'H', null, 7.25, 49);
+INSERT INTO subs(SubID, SubName, SubSize, Description, Price, IngredID)
+VALUES (10, 'The Club Sub', 'F', null, 10.95, 49);
+
+
+--insert side orders
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (1, 'Onion Rings', 'S', null, 6.25);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (2, 'Onion Rings', 'L', null, 8.95);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (3, 'French Fries', 'S', null, 3.95);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (4, 'French Fries', 'L', null, 6.25);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (5, 'Gravy', 'S', null, 1.75);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (6, 'Gravy', 'L', null, 2.75);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (7, 'Gralic Bread', null, null, 4.25);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (8, 'Garlic Bread with Cheese', null, null, 7.25);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (9, 'Zucchini', null, null, 11.95);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (10, 'Poutine', 'S', null, 7.50);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (11, 'Poutine', 'L', null, 10.75);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (12, 'Super Snack', null, 'Zucchini, Onion Rings, Chicken Nuggets, Chicken Wings & Fries', 13.50);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (13, 'Garlic Potato', 'S', null, 3.95);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (14, 'Garlic Potato', 'L', null, 6.25);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (15, 'Garlic Dip Sauce', 'S', null, 2.10);
+INSERT INTO sides(SideID, SideName, SideSize, Description, Price)
+VALUES (16, 'Garlic Dip Sauce', 'L', null, 3.25);
+
+
+--insert salads
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (1, 'Super Salad', null, null, 13.50, 50);
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (2, 'Chefs Salad', 'S', null, 6.95, null);
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (3, 'Chefs Salad', 'L', null, 11.95, null);
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (4, 'Ceasar Salad', 'S', null, 8.25, 51);
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (5, 'Ceasar Salad', 'L', null, 13.50, 51);
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (6, 'Greek Salad', 'S', null, 8.95, null);
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (7, 'Greek Salad', 'L', null, 13.50, null);
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (8, null, null, 'Add Meat', 2.95, null);
+INSERT INTO salads(SalID, SalName, SalSize, Extra, Price, IngredID)
+VALUES (9, null, null, 'Add Cheese', 2.95, null);
+
+
+--insert customer data
+INSERT INTO customers(CustomerID, FirstName, LastName, Phone, Address, City, Province, PostalCode) 
+VALUES (1, 'Lynn', 'Tran', '613-894-8058', '10 Deerfield Dr.', 'Nepean', 'ON', 'K2G3Y7');
+INSERT INTO customers(CustomerID, FirstName, LastName, Phone, Address, City, Province, PostalCode) 
+VALUES (2, 'Shan', 'Maninang', '613-942-2156', '2637 Doyle Rd.', 'Ottawa', 'ON', 'K4M1B4');
+INSERT INTO customers(CustomerID, FirstName, LastName, Phone, Address, City, Province, PostalCode) 
+VALUES (3, 'Emmanuel', 'Hermanez', '613-641-1846', '95 Rodeo Dr.', 'Ottawa', 'ON', 'K2J5L2');
+INSERT INTO customers(CustomerID, FirstName, LastName, Phone, Address, City, Province, PostalCode) 
+VALUES (4, 'Lena', 'Thang', '613-593-8123', '113 Hawthorne Ave.', 'Ottawa', 'ON', 'K1S0B1');
+INSERT INTO customers(CustomerID, FirstName, LastName, Phone, Address, City, Province, PostalCode) 
+VALUES (5, 'Diana', 'Yu', '613-356-5723', '1180, Old MontrÃ©al Rd.', 'Ottawa', 'ON', 'K4A0Y6');
+
+
+--insert data for orders
+INSERT INTO orders (OrderID, OrderDate, PickUpMethod, PaymentType, PizzaID, PastaID, ChickID, SandID, SubID, SideID, SalID, CustomerID) 
+VALUES (1, '04-SEPT-2023 05:18:37', 'Delivery', 'MasterCard', 5, 9, null, null, null, 1, 1, 1);
+INSERT INTO orders (OrderID, OrderDate, PickUpMethod, PaymentType, PizzaID, PastaID, ChickID, SandID, SubID, SideID, SalID, CustomerID)
+VALUES (2, '05-SEPT-2023 06:16:48', 'PickUp', 'Cash', 50, 1, null, null, null, null, null, 2);
+INSERT INTO orders (OrderID, OrderDate, PickUpMethod, PaymentType, PizzaID, PastaID, ChickID, SandID, SubID, SideID, SalID, CustomerID) 
+VALUES (3, '14-OCT-2023 07:18:37', 'Delivery', 'MasterCard', 50, null, 8, 6, null, null, null, 3);
+INSERT INTO orders (OrderID, OrderDate, PickUpMethod, PaymentType, PizzaID, PastaID, ChickID, SandID, SubID, SideID, SalID, CustomerID)
+VALUES (4, '19-NOV-2023 08:16:48', 'PickUp', 'Cash', 5, null, 5, 2, null, 12, 7, 4);
+INSERT INTO orders (OrderID, OrderDate, PickUpMethod, PaymentType, PizzaID, PastaID, ChickID, SandID, SubID, SideID, SalID, CustomerID) 
+VALUES (5, '20-NOV-2023 09:18:37', 'Delivery', 'MasterCard', null, null, 8, null, null, null, null, 5);

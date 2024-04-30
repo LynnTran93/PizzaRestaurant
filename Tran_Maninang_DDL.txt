@@ -1,0 +1,114 @@
+--Tran_Maninang_DDL
+--Lynn Tran & Shanklein Maruzandi Maninang
+--041102082 & 041125485
+--List of command to create the tables and constraints 
+
+
+--create table for customers
+CREATE TABLE customers
+(
+	CustomerID	INTEGER			CONSTRAINT pk_customerid	PRIMARY KEY,
+	FirstName	VARCHAR(45)		CONSTRAINT nn_firstname		NOT NULL,
+	LastName	VARCHAR(45)		CONSTRAINT nn_lastname		NOT NULL,
+	Phone		VARCHAR(45)		CONSTRAINT nn_phone		NOT NULL,
+	Address		VARCHAR(45)		CONSTRAINT nn_address		NOT NULL,
+	City		VARCHAR(45)		CONSTRAINT nn_city		NOT NULL,
+	Province	CHAR(3)			CONSTRAINT nn_province		NOT NULL,
+	PostalCode	CHAR(6)			CONSTRAINT nn_postalcode	NOT NULL
+);
+
+--create table for ingredients
+CREATE TABLE ingredients
+(
+	IngredID	INTEGER		CONSTRAINT pk_ingredID		PRIMARY KEY,
+	Ingredient	VARCHAR(100)	CONSTRAINT nn_ingredient	NOT NULL
+);
+
+--create table for pizza
+CREATE TABLE pizza
+(
+	PizzaID		INTEGER			CONSTRAINT pk_pizzaID		PRIMARY KEY,
+	PizzaName	VARCHAR(45)		CONSTRAINT nn_pizzaname		NOT NULL,
+	PizzaSize	VARCHAR(10)		CONSTRAINT nn_pizzasize		NOT NULL,
+	Price		FLOAT			CONSTRAINT nn_price		NOT NULL,
+	IngredID	INTEGER			CONSTRAINT fk_ingredID		REFERENCES ingredients(IngredID)
+);
+
+--create table for pasta
+CREATE TABLE pasta
+(
+	PastaID		INTEGER			CONSTRAINT pk_pastaid		PRIMARY KEY,
+	PastaName	VARCHAR(45)		,
+	Extra		VARCHAR(45)		,
+	Sauce		CHAR			,
+	Price		FLOAT			CONSTRAINT nn_price		NOT NULL,
+	IngredID	INTEGER			CONSTRAINT fk_ingredID		REFERENCES ingredients(IngredID)
+);
+
+--create table for chicken
+CREATE TABLE chicken
+(
+	ChickID		INTEGER			CONSTRAINT pk_chickID		PRIMARY KEY,
+	ChickName	VARCHAR(45)		,
+	Sauce	 	VARCHAR(15)		,
+	Price		FLOAT			CONSTRAINT nn_price		NOT NULL,
+	IngredID	INTEGER			CONSTRAINT fk_ingredID		REFERENCES ingredients(IngredID)
+);
+
+--create table for sandwiches
+CREATE TABLE sandwich
+(
+	SandID		INTEGER			CONSTRAINT pk_sandID		PRIMARY KEY,
+	SandName	VARCHAR(45)		CONSTRAINT nn_sandname		NOT NULL,
+	Price		FLOAT			CONSTRAINT nn_price		NOT NULL,
+	IngredID	INTEGER			CONSTRAINT fk_ingredID		REFERENCES ingredients(IngredID)
+);
+
+--create table for subs
+CREATE TABLE subs
+(
+	SubID		INTEGER			CONSTRAINT pk_subid		PRIMARY KEY,
+	SubName		VARCHAR(45)		CONSTRAINT nn_subname		NOT NULL,
+	SubSize		CHAR			CONSTRAINT nn_subsize		NOT NULL,
+	Description	VARCHAR(100)		,
+	Price		FLOAT			CONSTRAINT nn_price		NOT NULL,
+	IngredID	INTEGER			CONSTRAINT fk_ingredID		REFERENCES ingredients(IngredID)
+);
+
+--create table for salads
+CREATE TABLE salads
+(
+	SalID		INTEGER			CONSTRAINT pk_saladid		PRIMARY KEY,
+	SalName		VARCHAR(45)		,
+	SalSize		CHAR			,
+	Extra		VARCHAR(15)		,
+	Price		FLOAT			CONSTRAINT nn_price		NOT NULL,
+	IngredID	INTEGER			CONSTRAINT fk_ingredID		REFERENCES ingredients(IngredID)
+);
+
+--create table for side orders
+CREATE TABLE sides
+(
+	SideID		INTEGER			CONSTRAINT pk_sideID		PRIMARY KEY,
+	SideName	VARCHAR(45)		CONSTRAINT nn_sidename		NOT NULL,
+	SideSize	VARCHAR(10)		,
+	Description 	VARCHAR(100)		,
+	Price		FLOAT			CONSTRAINT nn_price		NOT NULL
+);
+
+--create table for orders
+CREATE TABLE orders
+(
+	OrderID			INTEGER			CONSTRAINT pk_orderid		PRIMARY KEY,
+	OrderDate 		TIMESTAMP		CONSTRAINT nn_timestamp		NOT NULL,
+	PickUpMethod 		VARCHAR(15)		CONSTRAINT nn_pickupmethod	NOT NULL,
+	PaymentType 		VARCHAR(15)		CONSTRAINT nn_paymenttype	NOT NULL,
+	PizzaID			INTEGER			CONSTRAINT fk_pizzaID		REFERENCES pizza(PizzaID),
+	PastaID			INTEGER			CONSTRAINT fk_pastaID		REFERENCES pasta(PastaID),
+	ChickID			INTEGER			CONSTRAINT fk_chickID		REFERENCES chicken(ChickID),
+	SandID			INTEGER			CONSTRAINT fk_sandID		REFERENCES sandwich(SandID),
+	SubID			INTEGER			CONSTRAINT fk_subID		REFERENCES subs(SubID),
+	SideID			INTEGER			CONSTRAINT fk_sideID		REFERENCES sides(SideID),
+	SalID			INTEGER			CONSTRAINT fk_salID		REFERENCES salads(SalID),
+	CustomerID		INTEGER			CONSTRAINT fk_customerID	REFERENCES customers(CustomerID)
+);
